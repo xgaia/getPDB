@@ -9,7 +9,6 @@ Bash script for easily download PDB files
 
 Just put the script in your `$PATH` and rename it
 
-    mv getpdb.sh getpdb
 
 ### Usage
 
