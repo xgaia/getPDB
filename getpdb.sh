@@ -17,6 +17,10 @@ for pdbid in $pdbs
 do
 	echo "Downloading " $pdbid "..."
 	wget --quiet http://www.rcsb.org/pdb/files/$pdbid.pdb
+	if [[ $? != 0 ]]; then
+		echo "===>  $pdbid doesn't exist !  <==="
+	fi
+	
 	wait
 done
-echo "all PDB files downloaded !"
+echo "Done !"
